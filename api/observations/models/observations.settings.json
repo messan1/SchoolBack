@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "observations",
+  "info": {
+    "name": "Observations"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "id_observant": {
+      "type": "string"
+    },
+    "id_observe": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Classe",
+        "Student",
+        "Absence",
+        "Note"
+      ]
+    }
+  }
+}

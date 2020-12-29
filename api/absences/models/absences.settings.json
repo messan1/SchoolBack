@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "absences",
+  "info": {
+    "name": "Absences",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "student": {
+      "model": "students"
+    },
+    "presence": {
+      "type": "boolean"
+    },
+    "matiere": {
+      "model": "matieres"
+    }
+  }
+}

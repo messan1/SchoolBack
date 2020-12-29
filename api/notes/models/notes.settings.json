@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notes",
+  "info": {
+    "name": "Notes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "student": {
+      "model": "students"
+    },
+    "matiere": {
+      "model": "matieres"
+    },
+    "note": {
+      "type": "integer"
+    },
+    "day": {
+      "type": "datetime"
+    },
+    "coefnotes": {
+      "type": "integer"
+    }
+  }
+}

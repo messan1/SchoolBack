@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coefs",
+  "info": {
+    "name": "coef"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "coef": {
+      "type": "integer"
+    },
+    "class": {
+      "model": "classes"
+    },
+    "matiere": {
+      "model": "matieres"
+    }
+  }
+}

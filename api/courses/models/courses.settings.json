@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "name": "Courses",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "classe": {
+      "model": "classes"
+    },
+    "matiere": {
+      "model": "matieres"
+    },
+    "teacher": {
+      "model": "teachers"
+    },
+    "start_hours": {
+      "type": "time"
+    },
+    "finish_hours": {
+      "type": "time"
+    },
+    "day": {
+      "type": "string"
+    }
+  }
+}

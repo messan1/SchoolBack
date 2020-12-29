@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "classes",
+  "info": {
+    "name": "Classes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "libelle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "pictures": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "principal_teacher": {
+      "model": "teachers"
+    },
+    "chef": {
+      "model": "students"
+    }
+  }
+}
